@@ -9,7 +9,7 @@ services:
       - sh
       - -euc
       - |
-        echo $HOSTNAME
+        echo $DOCKER_HOSTNAME
         cat <<EOF > /etc/promtail/config.yml
         server:
           disable: true
