@@ -18,8 +18,6 @@ services:
 
         clients:
           - url: https://loki:${LOKI_PASSWORD}@${LOKI_HOST}/loki/api/v1/push
-            external_labels:
-              - hostname: ${DOCKER_HOSTNAME}
 
         scrape_configs:
           - job_name: docker-logs
