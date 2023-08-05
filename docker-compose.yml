@@ -9,6 +9,7 @@ services:
       - sh
       - -euc
       - |
+        echo $HOSTNAME
         cat <<EOF > /etc/promtail/config.yml
         server:
           disable: true
